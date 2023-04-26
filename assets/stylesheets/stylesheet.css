@@ -1,0 +1,191 @@
+/* Inspiration + CSS "intro" credits: bones.sesh.team */
+/* Sources used list:
+    - spinbot.pw (video tag, #center),
+    - http://static.tumblr.com/zlim8hm/29yn6561z/force-cursor.png (cursor),
+    - https://github.com/tsenart/sight/blob/master/fonts/Consolas.ttf (font),
+    - https://emerald.gg/images/dot.png (2x2 dot, inspiration and pattern CSS)
+*/
+
+html {
+  cursor: url('../others/cursor.png'), default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a {
+  color: #e4e3e3;
+  text-decoration: none;
+}
+
+body,
+input {
+  color: #e4e3e3;
+  background-color: #000;
+}
+
+@font-face {
+  font-family: courier_regular;
+  src: url('../others/Consolas.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: consolas, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+input {
+  outline: 0;
+  border: none;
+}
+
+td {
+  padding: 3px;
+}
+
+hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-style: dashed;
+}
+
+pre {
+  font-size: 1.15em;
+}
+
+body,
+input {
+  background-color: #000;
+}
+
+
+
+
+.container {
+  position: absolute;
+  text-align: center;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+
+.emoticon {
+  vertical-align: middle;
+}
+
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -3;
+  overflow: hidden;
+}
+
+#pattern {
+  background: transparent url('../others/dot.png') repeat 0 0;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+  opacity: .25;
+  overflow: hidden;
+}
+
+#pattern,
+#background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#background {
+  z-index: -2;
+  position: center;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 133%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  overflow: hidden;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(2px);
+}
+
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#bottom-left{
+  position: absolute;
+  text-align: center;
+  top: 99%;
+  left: 4%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  overflow: hidden;
+}
+
+/* scroll css */
+
+#scroll-container {
+  overflow: hidden;
+}
+
+#scroll-text {
+  /* animation properties */
+  color: red;
+  font-weight: bold;
+  -moz-transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  
+  -moz-animation: my-animation 100s linear infinite;
+  -webkit-animation: my-animation 300s linear infinite;
+  animation: my-animation 50s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
