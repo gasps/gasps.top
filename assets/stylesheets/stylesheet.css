@@ -47,20 +47,6 @@ input {
   border: none;
 }
 
-td {
-  padding: 3px;
-}
-
-hr {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border-style: dashed;
-}
-
-pre {
-  font-size: 1.15em;
-}
-
 body,
 input {
   background-color: #000;
@@ -78,12 +64,6 @@ input {
   transform: translate(-50%, -50%);
   overflow: hidden;
 }
-
-
-.emoticon {
-  vertical-align: middle;
-}
-
 
 .background {
   width: 100%;
