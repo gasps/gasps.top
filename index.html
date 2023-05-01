@@ -51,15 +51,14 @@
   </head>
 
   <body>
+    <center><div id="clockDisplay" class="clockStyle rgb"></div></center>
+    
     <script type="text/javascript" src="assets/javascript/app.js"></script>
-
-
-
+    </div>
     <div class="background" style="display: none;">
       <div id="pattern"></div>
 
       <audio id="audio" loop="" autoplay>
-        <source src="assets/mp4/ouwee.mp4" type="audio/mp4" />
         <script>
           const audio = document.getElementById('audio');
 
@@ -69,7 +68,6 @@
       </audio>
 
       <video id="background" loop="" autoplay>
-        <source src="assets/mp4/ouwee.mp4" type="video/mp4" />
         <script>
           const video = document.getElementById('background');
 
@@ -78,19 +76,29 @@
         </script>
       </video>
     </div>
-    <a id="bottom-left" href="gasps.top/socials.txt" target="_BLANK">contact: kyh#2460</a>
 
-    <div id="scroll-container"> </div>
-    <div id="scroll-text">https://gasps.top is down for maintenanceㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤbe back in 2 weeks or more, not fully sure.ㅤㅤㅤㅤ complete revamp coming.<div>
+    <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+      <b class="rgb">be back in 2 weeks or more, not fully sure.</b>
+      <b class="rgb">complete revamp coming, contact is in the bottom left</b>
+    </marquee>
 
-
+    <div id="marquee2-container">
+    <marquee id="marquee2" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+      <a id="a">https://gasps.top is down for maintenance</a>
+      <a id="a" href="https://gasps.top/website-status" data-target="_BLANK">for more information, go to https://gasps.top/website-status</a>
+    </marquee>
+  </div>
+    
+    <a id="bottom-left" class="rgb" href="gasps.top/socials.txt" target="_BLANK">contact: kyh#2460</a>
       
-    <script type="text/javascript" src="assets/javascript/lib/jquery-3.1.1.min.js"></script>
+    <script src="assets/javascript/lib/jquery/3.1.0/jquery.min.js"></script>
+    <script src="assets/javascript/lib/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/javascript/lib/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/lib/jquery.marquee.min.js"></script>
     <script type="text/javascript" src="assets/javascript/lib/jquery.cookie.min.js"></script>
     <script type="text/javascript" src="assets/javascript/lib/typed.min.js"></script>
     <script type="text/javascript" src="assets/javascript/portfolio.js"></script>
-    <script type="text/javascript" src="assets/alert/alert.js"></script>
+    <script type="text/javascript" src="assets/javascript/clock.js"></script>
 
   </body>
 

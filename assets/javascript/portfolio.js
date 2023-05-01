@@ -22,6 +22,10 @@ const sources = [
     audio: 'assets/mp4/noflock.mp4',
     video: 'assets/mp4/noflock.mp4',
   },
+  {
+    audio: 'assets/mp4/wafflehouse.mp4',
+    video: 'assets/mp4/wafflehouse.mp4',
+  },
 ];
 
 function getRandomSource() {
