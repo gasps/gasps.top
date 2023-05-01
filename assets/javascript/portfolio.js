@@ -1,19 +1,57 @@
 'use strict';
 
-// Request sound/speaker permission when the page loads
+
+const sources = [
+  {
+    audio: 'assets/mp4/ouuwee.mp4',
+    video: 'assets/mp4/ouuwee.mp4',
+  },
+  {
+    audio: 'assets/mp4/mazeltron.mp4',
+    video: 'assets/mp4/mazeltron.mp4',
+  },
+  {
+    audio: 'assets/mp4/princeofthemitten2.mp4',
+    video: 'assets/mp4/princeofthemitten2.mp4',
+  },
+  {
+    audio: 'assets/mp4/offdeez.mp4',
+    video: 'assets/mp4/offdeez.mp4',
+  },
+  {
+    audio: 'assets/mp4/noflock.mp4',
+    video: 'assets/mp4/noflock.mp4',
+  },
+];
+
+function getRandomSource() {
+  const index = Math.floor(Math.random() * sources.length);
+  return sources[index];
+}
+
 window.addEventListener('load', () => {
+  const source = getRandomSource();
+
+  const audio = document.getElementById('audio');
+  audio.src = source.audio;
+  app.audioElement = audio;
+  app.audioElement.volume = 0;
+
+  const video = document.getElementById('background');
+  video.src = source.video;
+  app.videoElement = video;
+  app.videoElement.volume = 0;
+
   // Add click event listener to button element
   const playButton = document.getElementById('play-button');
   playButton.addEventListener('click', () => {
     if (typeof app.audioElement.play() === 'function') {
       app.audioElement.play()
       .then(() => {
-        // permission granted, play the sound
-        app.audioElement.play();
+        // Audio is playing
       })
       .catch((error) => {
-        // permission denied or error occurred
-        console.error('Unable to play sound:', error);
+        console.error('Error playing audio:', error);
       });
     }
   });
