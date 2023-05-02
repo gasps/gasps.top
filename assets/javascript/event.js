@@ -32,11 +32,11 @@ window.addEventListener("keydown", (event) => {
     if(event.ctrlKey && (event.key === "U" || event.key === "u")) {
        event.preventDefault();
        showEventAlert("This feature is disabled");
-    } // remove f12 to enable dev tools
-    if(event.key === "F12") {
-    event.preventDefault();
-    showEventAlert("This feature is disabled");
-    }
+    } // remove f12 to enable dev   tools
+    //if(event.key === "F12") {
+    //event.preventDefault();
+    //showEventAlert("This feature is disabled");
+    //}
   });
   // stop right click
   document.addEventListener('contextmenu', function(e) {
