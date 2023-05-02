@@ -21,6 +21,17 @@ a {
   text-decoration: none;
 }
 
+body {
+  color: #ffffff;
+  margin: 0;
+padding: 0;
+background-color: black;
+overflow: hidden;
+font-family: "Brandon Light";
+color: white;
+user-select: none;
+}
+
 body,
 input {
   color: #e4e3e3;
@@ -115,7 +126,7 @@ input {
   width: 0;
 }
 
-#bottom-left{
+.bottom-left{
   position: absolute;
   text-align: center;
   top: 99%;

@@ -3,28 +3,44 @@
 
 const sources = [
   {
-    audio: 'assets/mp4/ouuwee.mp4',
-    video: 'assets/mp4/ouuwee.mp4',
+    audio: 'assets/mp4/Babytron - King of the Galaxy.mp4',
+    video: 'assets/mp4/Babytron - King of the Galaxy.mp4',
   },
   {
-    audio: 'assets/mp4/mazeltron.mp4',
-    video: 'assets/mp4/mazeltron.mp4',
+    audio: 'assets/mp4/Babytron - Mazeltron ft BLP Kosher.mp4',
+    video: 'assets/mp4/Babytron - Mazeltron ft BLP Kosher.mp4',
   },
   {
-    audio: 'assets/mp4/princeofthemitten2.mp4',
-    video: 'assets/mp4/princeofthemitten2.mp4',
+    audio: 'assets/mp4/Babytron - Out on Bond.mp4',
+    video: 'assets/mp4/Babytron - Out on Bond.mp4',
   },
   {
-    audio: 'assets/mp4/offdeez.mp4',
-    video: 'assets/mp4/offdeez.mp4',
+    audio: 'assets/mp4/Babytron - Ouuwee.mp4',
+    video: 'assets/mp4/Babytron - Ouuwee.mp4',
   },
   {
-    audio: 'assets/mp4/noflock.mp4',
-    video: 'assets/mp4/noflock.mp4',
+    audio: 'assets/mp4/Babytron - Prince of the Mitten 2.mp4',
+    video: 'assets/mp4/Babytron - Prince of the Mitten 2.mp4',
   },
   {
-    audio: 'assets/mp4/wafflehouse.mp4',
-    video: 'assets/mp4/wafflehouse.mp4',
+    audio: 'assets/mp4/J.I.D - Off Deez ft J. Cole.mp4',
+    video: 'assets/mp4/J.I.D - Off Deez ft J. Cole.mp4',
+  },
+  {
+    audio: 'assets/mp4/Kodak Black - No Flockin Freestyle.mp4',
+    video: 'assets/mp4/Kodak Black - No Flockin Freestyle.mp4',
+  },
+  {
+    audio: 'assets/mp4/Rio Da Yung OG & RMC Mike - S.O.T.B.mp4',
+    video: 'assets/mp4/Rio Da Yung OG & RMC Mike - S.O.T.B.mp4',
+  },
+  {
+    audio: 'assets/mp4/Waffle House - BabyTron Ft. Drego & Beno, Babyfxce E, RMC Mike, ShittyBoyz, Prince Jefe, & J1Hunnit.mp4',
+    video: 'assets/mp4/Waffle House - BabyTron Ft. Drego & Beno, Babyfxce E, RMC Mike, ShittyBoyz, Prince Jefe, & J1Hunnit.mp4',
+  },
+  {
+    audio: 'assets/mp4/Young Thug - Bestfriend.mp4',
+    video: 'assets/mp4/Young Thug - Bestfriend.mp4',
   },
 ];
 
@@ -70,10 +86,6 @@ if ($.cookie('videoTime')) {
   app.videoElement.currentTime = $.cookie('videoTime');
   app.audioElement.currentTime = $.cookie('videoTime');
 }
-
-document.addEventListener('contextmenu', (event) => {
-  event.preventDefault();
-});
 
 $.fn.extend({
   animateCss: function (animationName) {
@@ -129,7 +141,7 @@ alertClose.addEventListener('click', () => {
   setTimeout(() => {
     alertContainer.style.display = 'none';
     alertBox.style.animation = '';
-    showAlert2('welcome to gasps.top!');
+    showAlert2('welcome to gasps.top!')
   }, 500);
 });
 
