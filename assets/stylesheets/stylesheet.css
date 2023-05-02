@@ -36,7 +36,10 @@ font-family: "Brandon Light";
 color: white;
 user-select: none;
 }
-
+a {
+  color: inherit;
+  text-decoration: none;
+}
 #gif {
   display: block;
   position: absolute;
@@ -105,6 +108,7 @@ user-select: none;
   transform: translate(-50%, -50%);
   font-weight: bold;
   overflow: hidden;
+  padding: 5px;
 }
 
 /* scroll css */

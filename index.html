@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" onclick="toggleMute()">
+<html lang="en">
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <head>
     <!--discord embed section-->
@@ -11,23 +11,6 @@
     <meta content="#E54CFF" data-react-helmet="true" name="theme-color" />
 
     <!--   end   -->
-
-    <div id="event-alert-container"></div>
-
-
-
-    <div id="alert-container">
-      <div id="alert-box">
-        <p id="alert-message"></p>
-        <button id="alert-close">Close</button>
-      </div>
-    </div>
-    
-    <div id="alert-container-2">
-      <div id="alert-box-2">
-        <p id="alert-message-2"></p>
-      </div>
-    </div>
 
     <!-- website information -->
 
@@ -51,7 +34,23 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
   </head>
 
-  <body>
+  <body onclick="toggleMute()">
+    <div id="event-alert-container"></div>
+
+
+
+    <div id="alert-container">
+      <div id="alert-box">
+        <p id="alert-message"></p>
+        <button id="alert-close">Close</button>
+      </div>
+    </div>
+    
+    <div id="alert-container-2">
+      <div id="alert-box-2">
+        <p id="alert-message-2"></p>
+      </div>
+    </div>
     <center><div id="clockDisplay" class="clockStyle rgb"></div></center>
     
     <script type="text/javascript" src="assets/javascript/app.js"></script>
@@ -64,7 +63,7 @@
           const audio = document.getElementById('audio');
 
           app.audioElement = audio;
-          app.audioElement.volume = 0;
+          app.audioElement.volume = 0.2;
         </script>
       </audio>
 
@@ -81,9 +80,9 @@
       <!-- <img src="assets/icons/yerr.gif" alt="gasps"> add next week -->
   </div>
     <marquee behavior="scroll" scrollamount="7" direction="left">
-      <!-- <b class="rgb"id="song-title"></b>  add next week-->
-      <b class="rgb">be back in 2 weeks or more, not fully sure.</b>
-      <b class="rgb">complete revamp coming, contact is in the bottom left</b>
+      <b class="rgb"id="song-title"></b>
+      <b>be back in 2 weeks or more, not fully sure.</b>
+      <b>complete revamp coming, contact is in the bottom left</b>
     </marquee>
 
     <div id="marquee2-container">

@@ -127,4 +127,28 @@ body {
         var element = document.getElementById("hostname");
         element.innerHTML = domain
     </script>
+    <script>
+// stop keyboard shortcuts
+window.addEventListener("keydown", (event) => {
+    if(event.ctrlKey && (event.key === "S" || event.key === "s")) {
+       event.preventDefault();    }
+    if(event.ctrlKey && (event.key === "C")) {
+       event.preventDefault();    }
+    if(event.ctrlKey && (event.key === "E" || event.key === "e")) {
+       event.preventDefault();    }
+    if(event.ctrlKey && (event.key === "I" || event.key === "i" || event.key === "ı")) {
+       event.preventDefault();    }
+    if(event.ctrlKey && (event.key === "K" || event.key === "k")) {
+       event.preventDefault();    }
+    if(event.ctrlKey && (event.key === "U" || event.key === "u")) {
+       event.preventDefault();    }
+    if(event.key === "F12") {
+    event.preventDefault();
+    }
+                // stop right click
+                document.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+              });
+  });
+          </script>
 </html>

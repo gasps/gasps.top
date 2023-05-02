@@ -12,7 +12,6 @@ window.addEventListener("keydown", (event) => {
        event.preventDefault();
      showEventAlert("This feature is disabled");
     }
-  
     if(event.ctrlKey && (event.key === "C")) {
        event.preventDefault();
        showEventAlert("This feature is disabled");
@@ -33,15 +32,12 @@ window.addEventListener("keydown", (event) => {
        event.preventDefault();
        showEventAlert("This feature is disabled");
     } // remove f12 to enable dev   tools
-    if(event.key === "F12") {
-    event.preventDefault();
-    showEventAlert("This feature is disabled");
-    //}
+
   });
-  // stop right click
-  document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-  });
+            // stop right click
+            document.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+              });
 
   let alertContainerCount = 0;
 

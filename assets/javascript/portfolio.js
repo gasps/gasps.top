@@ -6,52 +6,61 @@ const sources = [
     audio: 'assets/mp4/Babytron - King of the Galaxy.mp4',
     video: 'assets/mp4/Babytron - King of the Galaxy.mp4',
     title: 'Playing: Babytron - King of the Galaxy',
-
+    link: 'https://example.com/1'
   },
   {
     audio: 'assets/mp4/Babytron - Mazeltron ft BLP Kosher.mp4',
     video: 'assets/mp4/Babytron - Mazeltron ft BLP Kosher.mp4',
     title: 'Playing: Babytron - Mazeltron ft BLP Kosher',
+    link: 'https://example.com/1'
   },
   {
     audio: 'assets/mp4/Babytron - Out on Bond.mp4',
     video: 'assets/mp4/Babytron - Out on Bond.mp4',
     title: 'Playing: Babytron - Out on Bond',
+    link: 'https://example.com/1'
   },
   {
     audio: 'assets/mp4/Babytron - Ouuwee.mp4',
     video: 'assets/mp4/Babytron - Ouuwee.mp4',
     title: 'Playing: Babytron - Ouuwee/See Yall in June',
+    link: 'https://example.com/1'
   },
   {
     audio: 'assets/mp4/Babytron - Prince of the Mitten 2.mp4',
     video: 'assets/mp4/Babytron - Prince of the Mitten 2.mp4',
     title: 'Playing: Babytron - Prince of the Mitten 2',
+    link: 'https://example.com/1'
   },
   {
     audio: 'assets/mp4/J.I.D - Off Deez ft J. Cole.mp4',
     video: 'assets/mp4/J.I.D - Off Deez ft J. Cole.mp4',
     title: 'Playing: J.I.D - Off Deez ft J. Cole',
+    link: 'https://example.com/1'
   },
   {
     audio: 'assets/mp4/Kodak Black - No Flockin Freestyle.mp4',
     video: 'assets/mp4/Kodak Black - No Flockin Freestyle.mp4',
     title: 'Playing: Kodak Black - No Flockin Freestyle',
+    link: 'https://example.com/1'
   },
   {
     audio: 'assets/mp4/Rio Da Yung OG & RMC Mike - S.O.T.B.mp4',
     video: 'assets/mp4/Rio Da Yung OG & RMC Mike - S.O.T.B.mp4',
     title: 'Playing: Rio Da Yung OG & RMC Mike - S.O.T.B.',
+    link: 'https://example.com/1'
   },
   {
     audio: 'assets/mp4/Waffle House - BabyTron Ft. Drego & Beno, Babyfxce E, RMC Mike, ShittyBoyz, Prince Jefe, & J1Hunnit.mp4',
     video: 'assets/mp4/Waffle House - BabyTron Ft. Drego & Beno, Babyfxce E, RMC Mike, ShittyBoyz, Prince Jefe, & J1Hunnit.mp4',
-    title: 'Playing: Babytron - Wafflehouse ft 7 other ppl, lmao',
+    title: 'Playing: Babytron - Wafflehouse ft 7 other ppl',
+    link: 'https://example.com/1'
   },
   {
     audio: 'assets/mp4/Young Thug - Bestfriend.mp4',
     video: 'assets/mp4/Young Thug - Bestfriend.mp4',
     title: 'Playing: Young Thug - Bestfriend',
+    link: 'https://example.com/1'
   },
 ];
 
@@ -66,7 +75,7 @@ window.addEventListener('load', () => {
   const audio = document.getElementById('audio');
   audio.src = source.audio;
   app.audioElement = audio;
-  app.audioElement.volume = 0;
+  app.audioElement.volume = 0.2;
 
   const video = document.getElementById('background');
   video.src = source.video;
@@ -75,7 +84,13 @@ window.addEventListener('load', () => {
 
     // Update label with song title
     const titleElement = document.getElementById('song-title');
-    titleElement.innerText = source.title;
+    const link = document.createElement('a');
+    link.href = source.link;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.innerText = source.title;
+    titleElement.innerHTML = '';
+    titleElement.appendChild(link);
 
   // Add click event listener to button element
   const playButton = document.getElementById('play-button');
