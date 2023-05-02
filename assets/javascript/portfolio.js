@@ -6,61 +6,61 @@ const sources = [
     audio: 'assets/mp4/Babytron - King of the Galaxy.mp4',
     video: 'assets/mp4/Babytron - King of the Galaxy.mp4',
     title: 'Playing: Babytron - King of the Galaxy',
-    link: 'https://example.com/1'
+    link: 'https://gasps.top/links/King%20of%20the%20Galaxy'
   },
   {
     audio: 'assets/mp4/Babytron - Mazeltron ft BLP Kosher.mp4',
     video: 'assets/mp4/Babytron - Mazeltron ft BLP Kosher.mp4',
     title: 'Playing: Babytron - Mazeltron ft BLP Kosher',
-    link: 'https://example.com/1'
+    link: 'https://gasps.top/links/Mazeltron'
   },
   {
     audio: 'assets/mp4/Babytron - Out on Bond.mp4',
     video: 'assets/mp4/Babytron - Out on Bond.mp4',
     title: 'Playing: Babytron - Out on Bond',
-    link: 'https://example.com/1'
+    link: 'https://gasps.top/links/Out%20on%20Bond'
   },
   {
     audio: 'assets/mp4/Babytron - Ouuwee.mp4',
     video: 'assets/mp4/Babytron - Ouuwee.mp4',
     title: 'Playing: Babytron - Ouuwee/See Yall in June',
-    link: 'https://example.com/1'
+    link: 'https://gasps.top/links/Ouuwee'
   },
   {
     audio: 'assets/mp4/Babytron - Prince of the Mitten 2.mp4',
     video: 'assets/mp4/Babytron - Prince of the Mitten 2.mp4',
     title: 'Playing: Babytron - Prince of the Mitten 2',
-    link: 'https://example.com/1'
+    link: 'https://gasps.top/links/Prince%20of%20the%20Mitten%202'
   },
   {
     audio: 'assets/mp4/J.I.D - Off Deez ft J. Cole.mp4',
     video: 'assets/mp4/J.I.D - Off Deez ft J. Cole.mp4',
     title: 'Playing: J.I.D - Off Deez ft J. Cole',
-    link: 'https://example.com/1'
+    link: 'https://gasps.top/links/Off%20Deez'
   },
   {
     audio: 'assets/mp4/Kodak Black - No Flockin Freestyle.mp4',
     video: 'assets/mp4/Kodak Black - No Flockin Freestyle.mp4',
     title: 'Playing: Kodak Black - No Flockin Freestyle',
-    link: 'https://example.com/1'
+    link: 'https://gasps.top/links/No%20Flockin%20Freestyle'
   },
   {
     audio: 'assets/mp4/Rio Da Yung OG & RMC Mike - S.O.T.B.mp4',
     video: 'assets/mp4/Rio Da Yung OG & RMC Mike - S.O.T.B.mp4',
     title: 'Playing: Rio Da Yung OG & RMC Mike - S.O.T.B.',
-    link: 'https://example.com/1'
+    link: 'https://gasps.top/links/S.O.T.B'
   },
   {
     audio: 'assets/mp4/Waffle House - BabyTron Ft. Drego & Beno, Babyfxce E, RMC Mike, ShittyBoyz, Prince Jefe, & J1Hunnit.mp4',
     video: 'assets/mp4/Waffle House - BabyTron Ft. Drego & Beno, Babyfxce E, RMC Mike, ShittyBoyz, Prince Jefe, & J1Hunnit.mp4',
-    title: 'Playing: Babytron - Wafflehouse ft 7 other ppl',
-    link: 'https://example.com/1'
+    title: 'Playing: Babytron - Waffle House ft 7 other ppl',
+    link: 'https://gasps.top/links/Waffle%20House'
   },
   {
     audio: 'assets/mp4/Young Thug - Bestfriend.mp4',
     video: 'assets/mp4/Young Thug - Bestfriend.mp4',
     title: 'Playing: Young Thug - Bestfriend',
-    link: 'https://example.com/1'
+    link: 'https://gasps.top/links/Bestfriend'
   },
 ];
 
