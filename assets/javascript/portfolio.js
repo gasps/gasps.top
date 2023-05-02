@@ -5,42 +5,53 @@ const sources = [
   {
     audio: 'assets/mp4/Babytron - King of the Galaxy.mp4',
     video: 'assets/mp4/Babytron - King of the Galaxy.mp4',
+    title: 'Playing: Babytron - King of the Galaxy',
+
   },
   {
     audio: 'assets/mp4/Babytron - Mazeltron ft BLP Kosher.mp4',
     video: 'assets/mp4/Babytron - Mazeltron ft BLP Kosher.mp4',
+    title: 'Playing: Babytron - Mazeltron ft BLP Kosher',
   },
   {
     audio: 'assets/mp4/Babytron - Out on Bond.mp4',
     video: 'assets/mp4/Babytron - Out on Bond.mp4',
+    title: 'Playing: Babytron - Out on Bond',
   },
   {
     audio: 'assets/mp4/Babytron - Ouuwee.mp4',
     video: 'assets/mp4/Babytron - Ouuwee.mp4',
+    title: 'Playing: Babytron - Ouuwee/See Yall in June',
   },
   {
     audio: 'assets/mp4/Babytron - Prince of the Mitten 2.mp4',
     video: 'assets/mp4/Babytron - Prince of the Mitten 2.mp4',
+    title: 'Playing: Babytron - Prince of the Mitten 2',
   },
   {
     audio: 'assets/mp4/J.I.D - Off Deez ft J. Cole.mp4',
     video: 'assets/mp4/J.I.D - Off Deez ft J. Cole.mp4',
+    title: 'Playing: J.I.D - Off Deez ft J. Cole',
   },
   {
     audio: 'assets/mp4/Kodak Black - No Flockin Freestyle.mp4',
     video: 'assets/mp4/Kodak Black - No Flockin Freestyle.mp4',
+    title: 'Playing: Kodak Black - No Flockin Freestyle',
   },
   {
     audio: 'assets/mp4/Rio Da Yung OG & RMC Mike - S.O.T.B.mp4',
     video: 'assets/mp4/Rio Da Yung OG & RMC Mike - S.O.T.B.mp4',
+    title: 'Playing: Rio Da Yung OG & RMC Mike - S.O.T.B.',
   },
   {
     audio: 'assets/mp4/Waffle House - BabyTron Ft. Drego & Beno, Babyfxce E, RMC Mike, ShittyBoyz, Prince Jefe, & J1Hunnit.mp4',
     video: 'assets/mp4/Waffle House - BabyTron Ft. Drego & Beno, Babyfxce E, RMC Mike, ShittyBoyz, Prince Jefe, & J1Hunnit.mp4',
+    title: 'Playing: Babytron - Wafflehouse ft 7 other ppl, lmao',
   },
   {
     audio: 'assets/mp4/Young Thug - Bestfriend.mp4',
     video: 'assets/mp4/Young Thug - Bestfriend.mp4',
+    title: 'Playing: Young Thug - Bestfriend',
   },
 ];
 
@@ -62,6 +73,10 @@ window.addEventListener('load', () => {
   app.videoElement = video;
   app.videoElement.volume = 0;
 
+    // Update label with song title
+    const titleElement = document.getElementById('song-title');
+    titleElement.innerText = source.title;
+
   // Add click event listener to button element
   const playButton = document.getElementById('play-button');
   playButton.addEventListener('click', () => {
@@ -76,6 +91,7 @@ window.addEventListener('load', () => {
     }
   });
 });
+
 
 $(window).on('beforeunload', function(){
   app.videoElement.currentTime = 0;
