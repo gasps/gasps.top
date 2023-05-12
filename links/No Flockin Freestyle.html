@@ -1,5 +1,67 @@
 <!DOCTYPE html>
-<script type="text/javascript">
-document.write(decodeURIComponent(atob('JTNDJTIxRE9DVFlQRSUyMGh0bWwlM0UlMEElM0NodG1sJTNFJTBBJTIwJTIwJTNDaGVhZCUzRSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUzQ21ldGElMjBodHRwLWVxdWl2JTNEJTIycmVmcmVzaCUyMiUyMGNvbnRlbnQlM0QlMjIwJTNCdXJsJTNEaHR0cHMlM0EvL3d3dy55b3V0dWJlLmNvbS93YXRjaCUzRnYlM0RVRV8tb2JnaVdtMCUyMiUzRSUwQSUyMCUyMCUyMCUyMCUzQ3N0eWxlJTIwdHlwZSUzRCUyMnRleHQvY3NzJTIyJTIwbWVkaWElM0QlMjJzY3JlZW4lMjIlM0UlMEElMjAlMjAlMjAlMjAlMjAlMjBib2R5JTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwZGlzcGxheSUzQSUyMGZsZXglM0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjBqdXN0aWZ5LWNvbnRlbnQlM0ElMjBjZW50ZXIlM0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjBhbGlnbi1pdGVtcyUzQSUyMGNlbnRlciUzQiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMGJhY2tncm91bmQtY29sb3IlM0ElMjBibGFjayUzQiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMGhlaWdodCUzQSUyMDEwMHZoJTNCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTdEJTBBJTIwJTIwJTIwJTIwJTIwJTIwLmNlbnRlci1jb250YWluZXIlMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjB0ZXh0LWFsaWduJTNBJTIwY2VudGVyJTNCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwbWF4LXdpZHRoJTNBJTIwNTAwcHglM0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjBtYXJnaW4lM0ElMjBhdXRvJTNCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwbWFyZ2luLXRvcCUzQSUyMDEwMHB4JTBBJTIwJTIwJTIwJTIwJTIwJTIwJTdEJTBBJTIwJTIwJTIwJTIwLmxvZ28tbmFtZSUyMCU3QiUwQSUyMCUyMCUyMCUyMHRleHQtYWxpZ24lM0ElMjBjZW50ZXIlM0IlMEElMjAlMjAlMjAlMjBmb250LWZhbWlseSUzQSUyMENvbnNvbGFzJTJDJTIwc2Fucy1zZXJpZiUzQiUwQSUyMCUyMCUyMCUyMGZvbnQtc2l6ZSUzQSUyMDQwcHglM0IlMEElMjAlMjAlMjAlMjBjb2xvciUzQSUyMHdoaXRlJTNCJTBBJTIwJTIwJTdEJTBBJTIwJTIwJTIwJTIwJTIwJTIwbGFiZWwlMkMlMEElMjAlMjAlMjAlMjAlMjAlMjBhJTIwJTdCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwY29sb3IlM0ElMjB3aGl0ZSUzQiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMGZvbnQtZmFtaWx5JTNBJTIwQ29uc29sYXMlMkMlMjBzYW5zLXNlcmlmJTNCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTdEJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNDL3N0eWxlJTNFJTBBJTIwJTIwJTNDL2hlYWQlM0UlMEElMjAlMjAlM0Nib2R5JTNFJTBBJTIwJTIwJTIwJTIwJTNDZGl2JTIwY2xhc3MlM0QlMjJjZW50ZXItY29udGFpbmVyJTIyJTNFJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTNDcCUyMGlkJTNEJTIyaG9zdG5hbWUlMjIlMjBjbGFzcyUzRCUyMmxvZ28tbmFtZSUyMiUzRTEyNy4wLjAuMSUzQy9wJTNFJTBBJTIwJTIwJTIwJTIwJTNDbGFiZWwlM0VyZWRpcmVjdGluZyUyMHRvJTIwS29kYWslMjBCbGFjayUyMC0lMjBObyUyMEZsb2NraW4lMjBGcmVlc3R5bGUlMjBvbiUzQy9sYWJlbCUzRSUyMCUyNm5ic3AlM0IlMjAlM0NhJTIwaHJlZiUzRCUyMmh0dHBzJTNBLy93d3cueW91dHViZS5jb20lMjIlMjBkYXRhLXRhcmdldCUzRCUyMl9CTEFOSyUyMiUzRWh0dHBzJTNBLy93d3cueW91dHViZS5jb20vJTNDL2ElM0UlMEElMjAlMjAlM0MvZGl2JTNFJTBBJTNDL2JvZHklM0UlMEElM0NzY3JpcHQlM0UlMEElMjAlMjBjb25zdCUyMGRvbWFpbiUyMCUzRCUyMHdpbmRvdy5sb2NhdGlvbi5ob3N0bmFtZSUwQSUyMCUyMHZhciUyMGVsZW1lbnQlMjAlM0QlMjBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCUyOCUyMmhvc3RuYW1lJTIyJTI5JTNCJTBBJTIwJTIwZWxlbWVudC5pbm5lckhUTUwlMjAlM0QlMjBkb21haW4lMEElM0Mvc2NyaXB0JTNFJTBBJTNDc2NyaXB0JTNFJTBBLy8lMjBzdG9wJTIwa2V5Ym9hcmQlMjBzaG9ydGN1dHMlMEF3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lciUyOCUyMmtleWRvd24lMjIlMkMlMjAlMjhldmVudCUyOSUyMCUzRCUzRSUyMCU3QiUwQWlmJTI4ZXZlbnQuY3RybEtleSUyMCUyNiUyNiUyMCUyOGV2ZW50LmtleSUyMCUzRCUzRCUzRCUyMCUyMlMlMjIlMjAlN0MlN0MlMjBldmVudC5rZXklMjAlM0QlM0QlM0QlMjAlMjJzJTIyJTI5JTI5JTIwJTdCJTBBJTIwZXZlbnQucHJldmVudERlZmF1bHQlMjglMjklM0IlMjAlMjAlMjAlMjAlN0QlMEFpZiUyOGV2ZW50LmN0cmxLZXklMjAlMjYlMjYlMjAlMjhldmVudC5rZXklMjAlM0QlM0QlM0QlMjAlMjJDJTIyJTI5JTI5JTIwJTdCJTBBJTIwZXZlbnQucHJldmVudERlZmF1bHQlMjglMjklM0IlMjAlMjAlMjAlMjAlN0QlMEFpZiUyOGV2ZW50LmN0cmxLZXklMjAlMjYlMjYlMjAlMjhldmVudC5rZXklMjAlM0QlM0QlM0QlMjAlMjJFJTIyJTIwJTdDJTdDJTIwZXZlbnQua2V5JTIwJTNEJTNEJTNEJTIwJTIyZSUyMiUyOSUyOSUyMCU3QiUwQSUyMGV2ZW50LnByZXZlbnREZWZhdWx0JTI4JTI5JTNCJTIwJTIwJTIwJTIwJTdEJTBBaWYlMjhldmVudC5jdHJsS2V5JTIwJTI2JTI2JTIwJTI4ZXZlbnQua2V5JTIwJTNEJTNEJTNEJTIwJTIySSUyMiUyMCU3QyU3QyUyMGV2ZW50LmtleSUyMCUzRCUzRCUzRCUyMCUyMmklMjIlMjAlN0MlN0MlMjBldmVudC5rZXklMjAlM0QlM0QlM0QlMjAlMjIlQzQlQjElMjIlMjklMjklMjAlN0IlMEElMjBldmVudC5wcmV2ZW50RGVmYXVsdCUyOCUyOSUzQiUyMCUyMCUyMCUyMCU3RCUwQWlmJTI4ZXZlbnQuY3RybEtleSUyMCUyNiUyNiUyMCUyOGV2ZW50LmtleSUyMCUzRCUzRCUzRCUyMCUyMkslMjIlMjAlN0MlN0MlMjBldmVudC5rZXklMjAlM0QlM0QlM0QlMjAlMjJrJTIyJTI5JTI5JTIwJTdCJTBBJTIwZXZlbnQucHJldmVudERlZmF1bHQlMjglMjklM0IlMjAlMjAlMjAlMjAlN0QlMEFpZiUyOGV2ZW50LmN0cmxLZXklMjAlMjYlMjYlMjAlMjhldmVudC5rZXklMjAlM0QlM0QlM0QlMjAlMjJVJTIyJTIwJTdDJTdDJTIwZXZlbnQua2V5JTIwJTNEJTNEJTNEJTIwJTIydSUyMiUyOSUyOSUyMCU3QiUwQSUyMGV2ZW50LnByZXZlbnREZWZhdWx0JTI4JTI5JTNCJTIwJTIwJTIwJTIwJTdEJTBBaWYlMjhldmVudC5rZXklMjAlM0QlM0QlM0QlMjAlMjJGMTIlMjIlMjklMjAlN0IlMEFldmVudC5wcmV2ZW50RGVmYXVsdCUyOCUyOSUzQiUwQSU3RCUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMC8vJTIwc3RvcCUyMHJpZ2h0JTIwY2xpY2slMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjBkb2N1bWVudC5hZGRFdmVudExpc3RlbmVyJTI4JTI3Y29udGV4dG1lbnUlMjclMkMlMjBmdW5jdGlvbiUyOGUlMjklMjAlN0IlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjBlLnByZXZlbnREZWZhdWx0JTI4JTI5JTNCJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTdEJTI5JTNCJTBBJTdEJTI5JTNCJTBBJTIwJTIwJTIwJTIwJTNDL3NjcmlwdCUzRSUwQSUzQy9odG1sJTNFJTBB')));
+<html>
+  <head>
+    <style type="text/css" media="screen">
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        height: 100vh;
+      }
+      .center-container {
+          text-align: center;
+          max-width: 500px;
+          margin: auto;
+          margin-top: 100px
+      }
+    .logo-name {
+    text-align: center;
+    font-family: Consolas, sans-serif;
+    font-size: 40px;
+    color: white;
+  }
+      label,
+      a {
+        color: white;
+        font-family: Consolas, sans-serif;
+      }
+          </style>
+  </head>
+  <body>
+    <div class="center-container">
+      <p id="hostname" class="logo-name">127.0.0.1</p>
+    <label>redirecting to Kodak Black - No Flockin Freestyle on</label> &nbsp; <a href="https://www.youtube.com/watch?v=UE_-obgiWm0" data-target="_BLANK">https://www.youtube.com/</a>
+  </div>
+</body>
+<script>
+  const domain = window.location.hostname
+  var element = document.getElementById("hostname");
+  element.innerHTML = domain
 </script>
-<noscript>You must enable javascript in your browser to view this webpage.</noscript>
+<script>
+// stop keyboard shortcuts
+window.addEventListener("keydown", (event) => {
+if(event.ctrlKey && (event.key === "S" || event.key === "s")) {
+ event.preventDefault();    }
+if(event.ctrlKey && (event.key === "C")) {
+ event.preventDefault();    }
+if(event.ctrlKey && (event.key === "E" || event.key === "e")) {
+ event.preventDefault();    }
+if(event.ctrlKey && (event.key === "I" || event.key === "i" || event.key === "ı")) {
+ event.preventDefault();    }
+if(event.ctrlKey && (event.key === "K" || event.key === "k")) {
+ event.preventDefault();    }
+if(event.ctrlKey && (event.key === "U" || event.key === "u")) {
+ event.preventDefault();    }
+if(event.key === "F12") {
+event.preventDefault();
+}
+          // stop right click
+          document.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+        });
+});
+    </script>
+</html>
+

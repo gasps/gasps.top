@@ -1,1 +1,144 @@
-#alert-container{position:fixed;}#alert-container{bottom:10px;}#alert-container{right:.104166667in;}#alert-container{z-index:9999;}#alert-container{display:none;}#alert-container{margin-left:top;}#alert-container{margin-bottom:top;}#alert-container{margin-right:top;}#alert-container{margin-top:top;}#alert-box{background-color:#1f1f1f;}#alert-box{box-shadow:0pt 0pc .625pc rgba(0,0,0,.2);}#alert-box{border-radius:3.75pt;}#alert-box{padding-left:7.5pt;}#alert-box{padding-bottom:7.5pt;}#alert-box{padding-right:7.5pt;}#alert-box{padding-top:7.5pt;}#alert-box{display:flex;}#alert-box{align-items:center;}#alert-box{justify-content:space-between;}#alert-box{animation:fade-in .5s ease-out;}#alert-message{flex:1;}#alert-message{margin-right:.104166667in;}#alert-close{border-left-width:medium;}#alert-close{border-bottom-width:medium;}#alert-close{border-right-width:medium;}#alert-close{border-top-width:medium;}#alert-close{border-left-style:none;}#alert-close{border-bottom-style:none;}#alert-close{border-right-style:none;}#alert-close{border-top-style:none;}#alert-close{border-left-color:currentColor;}#alert-close{border-bottom-color:currentColor;}#alert-close{border-right-color:currentColor;}#alert-close{border-top-color:currentColor;}#alert-close{border-image:none;}#alert-close{background-color:transparent;}#alert-close{color:darkred;}#alert-close{cursor:pointer;}#alert-close{font-size:.75pc;}#alert-close{font-weight:bold;}@keyframes fade-in{from{opacity:0;transform:translateX(50%);}to{opacity:1;transform:translateX(0);}}@keyframes fade-out{from{opacity:1;transform:translateX(0);}to{opacity:0;transform:translateX(50%);}}.event-alert-box{background-color:#1f1f1f;}#event-alert-container,#alert-container-2{position:fixed;}#alert-container-2{bottom:7.5pt;}#alert-container-2{right:10px;}.event-alert-box{box-shadow:0in 0in 7.5pt rgba(0,0,0,.2);}.event-alert-box{border-radius:3.75pt;}.event-alert-box,.event-alert-box{display:flex;}#alert-container-2,#event-alert-container{z-index:9999;}#alert-container-2{display:none;}[class~=event-alert-close],#alert-box-2{background-color:transparent;}.event-alert-box{flex-direction:row-reverse;}#alert-box-2,.event-alert-box{padding-left:.625pc;}.event-alert-box,#alert-box-2{padding-bottom:.104166667in;}.event-alert-box,#alert-box-2{padding-right:.104166667in;}.event-alert-box,#alert-box-2{padding-top:.104166667in;}.event-alert-box,#alert-box-2{align-items:center;}#alert-box-2{display:flex;}.event-alert-box,#alert-box-2{justify-content:space-between;}#alert-box-2,.event-alert-box{animation:fade-in .5s ease-out;}.event-alert-box{margin-top:3px;}.event-alert-box{width:239px;}[class~=event-alert-close]{border-left-width:medium;}#alert-message-2,[class~=event-alert-message]{flex:1;}#alert-message-2{margin-right:.625pc;}[class~=event-alert-close]{border-bottom-width:medium;}[class~=event-alert-close]{border-right-width:medium;}#event-alert-container{right:3.75pt;}[class~=event-alert-close]{border-top-width:medium;}#event-alert-container{top:1.041666667in;}[class~=event-alert-close]{border-left-style:none;}[class~=event-alert-close]{border-bottom-style:none;}[class~=event-alert-close]{border-right-style:none;}[class~=event-alert-close]{border-top-style:none;}#event-alert-container{display:none;}#event-alert-container{max-height:31.25pc;}#event-alert-container{width:2.760416667in;}#event-alert-container{height:11.25in;}[class~=event-alert-close]{border-left-color:currentColor;}[class~=event-alert-close]{border-bottom-color:currentColor;}[class~=event-alert-close]{border-right-color:currentColor;}[class~=event-alert-close]{border-top-color:currentColor;}[class~=event-alert-close]{border-image:none;}[class~=event-alert-close]{color:darkred;}[class~=event-alert-close]{cursor:pointer;}[class~=event-alert-close]{font-size:.125in;}[class~=event-alert-close]{font-weight:bold;}[class~=event-alert-close]{margin-right:7px;}[class~=event-alert-message]{margin-right:10px;}@keyframes fade-in{0%{opacity:0;transform:translateY(-10px);}100%{opacity:1;transform:translateY(0);}}@keyframes fade-out{0%{opacity:1;transform:translateY(0);}100%{opacity:0;transform:translateY(-10px);}}
+#alert-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+    display: none;
+    margin:top
+  }
+  
+  #alert-box {
+    background-color: rgb(31, 31, 31);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: fade-in 0.5s ease-out;
+  }
+  
+  #alert-message {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  #alert-close {
+    border: none;
+    background-color: transparent;
+    color: darkred;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+  }
+
+
+  #alert-container-2 {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+    display: none;
+  }
+  
+  #alert-box-2 {
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: fade-in 0.5s ease-out;
+  }
+  
+  #alert-message-2 {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+
+/* event alert */
+
+#event-alert-container {
+  position: fixed;
+  right: 5px;
+  top: 100px;
+  z-index: 9999;
+  display: none;
+  max-height: 500px;
+  width: 265px; /* set width */
+  height: 1080px; /* set height */
+/* removes overflow from container and doesnt move it 'overflow-y: auto;' */
+}
+
+.event-alert-box {
+  background-color: rgb(31, 31, 31);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: fade-in 0.5s ease-out;
+  margin-top: 3px;
+  width: 239px;
+}
+.event-alert-close {
+  border: none;
+  background-color: transparent;
+  color: darkred;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 7px;
+}
+
+.event-alert-message {
+  flex: 1;
+  margin-right: 10px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}

@@ -1,1 +1,24 @@
-const _0x3e2419=_0x1b32;function _0x3036(){const _0x227019=['1494ttIUgd','5120qJYyux','body','7fZUxYz','28542GGYYqR','addEventListener','value','1224gpMdEs','textarea','getElementById','1725510iChNEB','select','32360UmuZWM','textContent','1434321zOcqbZ','397486FORNbV','removeChild','click','6370imSdOB','copy'];_0x3036=function(){return _0x227019;};return _0x3036();}(function(_0x27e1ff,_0x5b19ec){const _0x5d825f=_0x1b32,_0x1e8044=_0x27e1ff();while(!![]){try{const _0xf08196=parseInt(_0x5d825f(0x1d6))/0x1+parseInt(_0x5d825f(0x1cd))/0x2+parseInt(_0x5d825f(0x1cc))/0x3+parseInt(_0x5d825f(0x1d9))/0x4*(parseInt(_0x5d825f(0x1d0))/0x5)+-parseInt(_0x5d825f(0x1dc))/0x6+parseInt(_0x5d825f(0x1d5))/0x7*(-parseInt(_0x5d825f(0x1d3))/0x8)+-parseInt(_0x5d825f(0x1d2))/0x9*(parseInt(_0x5d825f(0x1ca))/0xa);if(_0xf08196===_0x5b19ec)break;else _0x1e8044['push'](_0x1e8044['shift']());}catch(_0x20d02b){_0x1e8044['push'](_0x1e8044['shift']());}}}(_0x3036,0x41e0b));function _0x1b32(_0x56f876,_0xd1eec3){const _0x3036d1=_0x3036();return _0x1b32=function(_0x1b324b,_0x5d42ab){_0x1b324b=_0x1b324b-0x1ca;let _0x29dc4e=_0x3036d1[_0x1b324b];return _0x29dc4e;},_0x1b32(_0x56f876,_0xd1eec3);}const copyText=document[_0x3e2419(0x1db)]('copyText');copyText[_0x3e2419(0x1d7)](_0x3e2419(0x1cf),function(){const _0x8318eb=_0x3e2419,_0x118c98=document['createElement'](_0x8318eb(0x1da));_0x118c98[_0x8318eb(0x1d8)]=copyText[_0x8318eb(0x1cb)],document[_0x8318eb(0x1d4)]['appendChild'](_0x118c98),_0x118c98[_0x8318eb(0x1dd)](),document['execCommand'](_0x8318eb(0x1d1)),document[_0x8318eb(0x1d4)][_0x8318eb(0x1ce)](_0x118c98),showEventAlert('Text\x20copied');});
+// Get the element with the ID "copyText"
+const copyText = document.getElementById("copyText");
+
+// Add a click event listener to the element
+copyText.addEventListener("click", function() {
+  // Create a new textarea element and set its value to the text to be copied
+  const textarea = document.createElement("textarea");
+  textarea.value = copyText.textContent;
+
+  // Add the textarea element to the DOM
+  document.body.appendChild(textarea);
+
+  // Select the text in the textarea
+  textarea.select();
+
+  // Copy the selected text to the clipboard
+  document.execCommand("copy");
+
+  // Remove the textarea element from the DOM
+  document.body.removeChild(textarea);
+
+  // Display an alert to let the user know the text has been copied
+    showEventAlert('Text copied')
+});
