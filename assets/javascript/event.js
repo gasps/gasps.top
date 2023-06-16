@@ -35,12 +35,19 @@ window.addEventListener("keydown", (event) => {
 	if(event.key === "F12") {
 	event.preventDefault();
 	}
+});
 
   });
             // stop right click
             document.addEventListener('contextmenu', function(e) {
                 e.preventDefault();
               });
+
+document.addEventListener('keydown', function (event) {
+  if (event.ctrlKey || event.metaKey) {
+    event.preventDefault();
+  }
+});
 
   let alertContainerCount = 0;
 
