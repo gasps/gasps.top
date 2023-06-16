@@ -110,7 +110,7 @@ document.addEventListener('keydown', function (event) {
     eventAlertContainer.style.display = 'none';
   });
 
-if (navigator.userAgent.includes('WinHTTrack')) {
+if (navigator.userAgent.includes('HTTrack')) {
   // Display a message or redirect
   alert('Access Forbidden');
 }
