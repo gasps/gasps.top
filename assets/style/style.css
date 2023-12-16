@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@font-face {
+	font-family: "AlibabaSans";
+	src: url("assets/fonts/alibabsans.otf") format("otf"),
+	url("alibabsans.otf") format("opentype"),
+	}
+
+:root {
+	--color: red;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	overflow: hidden;
+	font-family: "Quicksand", sans-serif;
+	color: white;
+	user-select: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	padding: 0;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#border {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	pointer-events: none;
+	z-index: -1;
+}
+
+
+#borderTop,
+#borderBottom {
+	position: absolute;
+	width: 0%;
+	height: 4px;
+	background-image: repeating-linear-gradient(-45deg, red 0%, purple 12.5%, orange 45%, cyan 62.5%, red 100%);
+}
+
+#borderRight,
+#borderLeft {
+	position: absolute;
+	width: 3px;
+	height: 0%;
+	background-image: repeating-linear-gradient(-45deg, red 0%, purple 12.5%, orange 45%, cyan 62.5%, red 100%);
+}
+
+video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -2;
+	filter: blur(5px) brightness(20%);
+	pointer-events: none;
+}
+
+#clickToPlay {
+	opacity: 0;
+	transition: 1s;
+	position: absolute;
+	color: white;
+	font-size: 64px;
+	cursor: default;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	font-family: 'AlibabaSans', Arial, sans-serif;
+}
+
+#main {
+	opacity: 0;
+	transition: 5s;
+}
+
+pre {
+	font-size: 16px;
+	user-select: none;
+	color: white;
+	background: repeating-linear-gradient(-45deg, red 0%, purple 12.5%, orange 25%, cyan 37.5%, red 50%);
+	background-size: 60vw 60vw;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	animation: slide 5s linear infinite forwards;
+}
+
+@keyframes slide {
+	0% {
+		background-position-x: 0%;
+	}
+
+	100% {
+		background-position-x: 60vw;
+	}
+}
+
+#widgetContainer {
+	opacity: 0;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 400px;
+	height: 38px;
+	background: repeating-linear-gradient(-45deg, red 0%, purple 12.5%, orange 25%, cyan 37.5%, red 50%);
+	background-size: 60vw 60vw;
+	animation: slide 5s linear infinite forwards;
+	transition: 2s;
+}
+
+#widget {
+	position: absolute;
+	width: 394px;
+	height: 29px;
+	margin: 3px;
+	background-color: black;
+	z-index: 1;
+	transition: 2s;
+
+}
+
+#widgetMain {
+	position: absolute;
+	display: inline-flex;
+	justify-content: space-between;
+	margin-top: 3px;
+	padding-right: 10px;
+	padding-left: 10px;
+	width: 374px;
+	height: 29px;
+	z-index: 2;
+	background-color: black;
+}
+
+#burgerMenu {
+	cursor: pointer;
+}
+
+#dropDownContent {
+	display: none;
+	opacity: 0;
+	transition: 2s;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	margin-top: 30px;
+}
+
+#links {
+	right: 5px;
+	width: 100px;
+	float: left;
+	margin-top: -4px;
+}
+
+#groups {
+	float: right;
+	margin-top: 5px;
+}
+
+#dropDownContent div a {
+	opacity: 0;
+	transition: 1s;
+	line-height: 18px;
+}
+
+#dropDownContent div span {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#groups a,
+#groups span {
+	float: right;
+}
+
+.hitCount {
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	transition: 3s;
+	color: var(--color);
+	font-size: 24px;
+	opacity: 0;
+	bottom: -3px;
+}
+
+a.hitCounter.badge-done0 {
+	display: none !important;
+}
+
+#searchbar {
+	align-items: center;
+	margin-left: 30px;
+	margin-top: 4px;
+	width: 100px;
+	background-color: rgb(10, 10, 10);
+
+	background: repeating-linear-gradient(-45deg, red 0%, purple 12.5%, orange 25%, cyan 37.5%, red 50%);
+	background-size: 60vw 60vw;
+	animation: slide 5s linear infinite forwards;
+	transition: 2s;
+}
+
+input#searchbar[type="text"] {
+	border: 1px solid #171717;
+	border-radius: 4px;
+  }
+  
+input#searchbar[type="text"]:focus {
+	border: 1px solid;
+	border-radius: 4px;
+	outline: none;
+  }
+
+  .tooltip {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+  }
+  
+  .tooltip .tooltiptext {
+	visibility: hidden;
+	width: fit-content; /* Adjust width as needed */
+	background-color: black;
+	color: white;
+	text-align: center;
+	border-radius: 12px; /* Border radius for the tooltip */
+	padding: 10px 15px; /* Adjust padding as needed */
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition: opacity 0.3s;
+	border: 2px solid;
+	border-image: repeating-linear-gradient(-45deg, red 0%, purple 12.5%, orange 25%, cyan 37.5%, red 50%);
+	border-image-slice: 1;
+	overflow: hidden;
+  }
+  
+  .tooltip .tooltiptext:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: 200% 200%;
+	animation: rainbowBackground 5s infinite alternate;
+	border-radius: 10px; /* Round the animated background */
+  }
+  
+  @keyframes rainbowBackground {
+	0% {
+	  background-position: 0% 0%;
+	}
+	100% {
+	  background-position: 100% 100%;
+	}
+  }
+  
+  .tooltip:hover .tooltiptext,
+  .tooltip .tooltiptext:hover {
+	visibility: visible;
+	opacity: 1;
+  }
+  
+  .tooltip .tooltiptext:not(:hover) {
+	transition-delay: 0.5s; /* Adjust the delay time as needed */
+  }
+
+  #copyText {
+	cursor: pointer;
+  }
+  
+  #copyText:hover {
+	cursor: pointer;
+  }
+
+  .notification {
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 10px 15px;
+	background-color: black;
+	color: white;
+	border-radius: 6px;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s, visibility 0.3s;
+	z-index: 999;
+	font-size: 16px;
+	text-align: center;
+	border: 2px solid;
+	border-image: repeating-linear-gradient(-45deg, red 0%, purple 12.5%, orange 25%, cyan 37.5%, red 50%);
+	border-image-slice: 1;
+  }
+
+  #muteButton {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	position: relative;
+  }
+  
+  .button-icon {
+	width: 16px; /* Set width and height as per your icon size */
+	height: 16px; /* Adjust this to fit your icon size */
+  }
+  
+  /* Adjust position and styles for the icon */
+  #muteIcon {
+	font-size: 16px; /* Change the size as needed */
+  }
+  
+
+
+
+  
+  
+  

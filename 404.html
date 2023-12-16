@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>gasps.top - 404</title>
+        <meta property="og:title" content="gasps.top - 404">
+        <meta property="og:url" content>
+        <meta property="og:image" content="assets/icon/globe.png">
+        <meta name="theme-color" content="#551A8B">
+
+        <link rel="stylesheet" href="assets/style/404.css">
+    </head>
+    <body>
+        <div class="center-container">
+            <p id="hostname" class="logo-name"></p>
+            <p class="logo-name">404: directory not found</p>
+            <div class="list-users">
+                <p>
+                    for more information, go to - <a href="https://gasps.top/404-error" data-target="_BLANK"  class="woah">https://gasps.top/404-error</a>
+                </p>
+                <p class="ad">
+                     return to - <a href="https://gasps.top" data-target="_BLANK"  class="return">https://gasps.top</a>
+                </p>
+            </div>
+        </div>
+    </body>
+    <script>
+        const domain = window.location.hostname
+        var element = document.getElementById("hostname");
+        element.innerHTML = domain
+    </script>
+    <script>
+// stop keyboard shortcuts
+window.addEventListener("keydown", (event) => {
+    if(event.ctrlKey && (event.key === "S" || event.key === "s")) {
+       event.preventDefault();    }
+    if(event.ctrlKey && (event.key === "C")) {
+       event.preventDefault();    }
+    if(event.ctrlKey && (event.key === "E" || event.key === "e")) {
+       event.preventDefault();    }
+    if(event.ctrlKey && (event.key === "I" || event.key === "i" || event.key === "ı")) {
+       event.preventDefault();    }
+    if(event.ctrlKey && (event.key === "K" || event.key === "k")) {
+       event.preventDefault();    }
+    if(event.ctrlKey && (event.key === "U" || event.key === "u")) {
+       event.preventDefault();    }
+    if(event.key === "F12") {
+    event.preventDefault();
+    }
+                // stop right click
+                document.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+              });
+  });
+          </script>
+
+          <script> 
+var subdomain = window.location.hostname.split('.')[0];
+var errorElement = document.getElementById('error-message');
+
+if (subdomain !== 'm0tion') {
+  errorElement.innerHTML = 'Sorry, the subdomain you requested does not exist.';
+} else if (subdomain !== 'moti0n') {
+    errorElement.innerHTML = 'Sorry, fake';
+}
+</script>
+</html>
