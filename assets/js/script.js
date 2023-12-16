@@ -67,7 +67,6 @@ const sources = [
     }
   
     video.addEventListener('ended', onVideoEnded);
-
     video.play();
   }
 
@@ -80,9 +79,26 @@ const sources = [
     randomizeVideo();
 }
 
-function getRandomSource() {
-    const index = Math.floor(Math.random() * sources.length);
-    return sources[index];
+function shuffleArray(array) {
+    let currentIndex = array.length;
+    let temporaryValue, randomIndex;
+  
+    while (currentIndex !== 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+  
+    return array;
+  }
+  
+  function getRandomSource() {
+    const shuffledSources = shuffleArray(sources);
+    const randomIndex = Math.floor(Math.random() * shuffledSources.length);
+    return shuffledSources[randomIndex];
   }
 
 
