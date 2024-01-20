@@ -17,3 +17,4 @@ function addEntry(text, href) {
 // For example:
 addEntry('Motion - TrafficerMC fork (Deprecated)', 'github.com/devgasps/Motion');
 addEntry('Lyra Addon - A Meteor Client Addon', 'github.com/RattlesHyper/Lyra-Addon');
+addEntry('Bungeecord Fork - Custom coded Bungeecord with 1.7.x - 1.20.x Support with concurrent updates and maintence')

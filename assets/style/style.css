@@ -226,64 +226,6 @@ input#searchbar[type="text"]:focus {
 	outline: none;
   }
 
-  .tooltip {
-	position: relative;
-	display: inline-block;
-	cursor: pointer;
-  }
-  
-  .tooltip .tooltiptext {
-	visibility: hidden;
-	width: fit-content; /* Adjust width as needed */
-	background-color: black;
-	color: white;
-	text-align: center;
-	border-radius: 12px; /* Border radius for the tooltip */
-	padding: 10px 15px; /* Adjust padding as needed */
-	position: absolute;
-	z-index: 1;
-	bottom: 125%;
-	left: 50%;
-	transform: translateX(-50%);
-	opacity: 0;
-	transition: opacity 0.3s;
-	border: 2px solid;
-	border-image: repeating-linear-gradient(-45deg, red 0%, purple 12.5%, orange 25%, cyan 37.5%, red 50%);
-	border-image-slice: 1;
-	overflow: hidden;
-  }
-  
-  .tooltip .tooltiptext:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-size: 200% 200%;
-	animation: rainbowBackground 5s infinite alternate;
-	border-radius: 10px; /* Round the animated background */
-  }
-  
-  @keyframes rainbowBackground {
-	0% {
-	  background-position: 0% 0%;
-	}
-	100% {
-	  background-position: 100% 100%;
-	}
-  }
-  
-  .tooltip:hover .tooltiptext,
-  .tooltip .tooltiptext:hover {
-	visibility: visible;
-	opacity: 1;
-  }
-  
-  .tooltip .tooltiptext:not(:hover) {
-	transition-delay: 0.5s; /* Adjust the delay time as needed */
-  }
-
   #copyText {
 	cursor: pointer;
   }
